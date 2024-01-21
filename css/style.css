@@ -1,1 +1,86 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
 
+body {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px; 
+  color: black;
+  margin: 3% 5%;
+}
+
+.menu-container {
+  width: 100%;
+}
+
+.menu-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Equal space distribution */
+}
+
+h1 {
+  font-size: 45px;
+  margin-bottom: 30px;
+  text-align: center; /* Center the h1 element */
+}
+
+#menu1, #menu2, #menu3 {
+  background-color: rgb(241, 239, 234);
+  border: 2px solid #676767;
+  margin-bottom: 50px;
+}
+
+#menu-title1, #menu-title2, #menu-title3 {
+  font-size: 1.25em;
+  border-left: 2px solid#676767;
+  border-bottom: 2px solid#676767;
+  padding: 5px 50px;
+  float: right;
+}
+#menu-title1{
+  background-color: #ffc5c5;
+}
+
+#menu-title2{
+  background-color: #bf3d3d;
+  color: #ffffff
+  ;
+}
+
+#menu-title3{
+  background-color: #ffed68;
+  ;
+}
+
+.menu-descr{
+  clear: right;
+  padding: 2px 20px;
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  #menu1, #menu2, #menu3 {
+    width: 32%; 
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  #menu1, #menu2 {
+    width: 48%;
+    background-color: lightblue;
+  }
+  #menu3 {
+    width: 100%;
+    background-color: lightcoral;
+  }
+}
+/********** Small devices only **********/
+@media (max-width: 767px) {
+  .menu-row{
+    display: block;
+  }
+}
